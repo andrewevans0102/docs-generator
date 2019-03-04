@@ -1,0 +1,27 @@
+{
+  "name": "docs-generator",
+  "version": "1.0.0",
+  "description": "Example project that uses MkDocs and Python to create Documentation",
+  "main": "index.js",
+  "scripts": {
+    "download-project": "git clone https://github.com/angular/material2.git",    
+  "install-mkdocs": "pip install mkdocs" ,    
+  "install-material": "pip install mkdocs-material",    
+  "create-site": "npm run download-project && python3 
+     scripts/create_site.py && npm run serve-site",    
+  "serve-site": "cd mkdocs-site && mkdocs build && mkdocs serve",
+  "deploy-site": "cd mkdocs-site && mkdocs build && mkdocs gh-  
+     deploy",    
+  "setup": "npm run install-mkdocs && npm run install-material"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewevans02/docs-generator.git"
+  },
+  "author": "Andrew Evans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewevans02/docs-generator/issues"
+  },
+  "homepage": "https://github.com/andrewevans02/docs-generator#readme"
+}

@@ -59,3 +59,17 @@ typings/
 
 # next.js build output
 .next
+
+# mkdocs site
+generated-site/site/*
+
+# created files from project
+/generated-site/site-files/
+
+# created mkdocs file for site
+/generated-site/mkdocs.yml
+
+# material site that was downloaded when documentation is generated here
+/material2
+
+

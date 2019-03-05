@@ -1,0 +1,17 @@
+# Project information
+site_name: 'project documentation'
+site_description: 'all documentation for the project' 
+site_author: 'Andrew Evans'
+site_url: ''
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+font:
+  text: 'Roboto'
+  code: 'Roboto Mono'
+nav:
+  - Home: index.md

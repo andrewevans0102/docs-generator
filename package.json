@@ -4,15 +4,11 @@
   "description": "Example project that uses MkDocs and Python to create Documentation",
   "main": "index.js",
   "scripts": {
-    "download-project": "git clone https://github.com/angular/material2.git",    
-  "install-mkdocs": "pip install mkdocs" ,    
-  "install-material": "pip install mkdocs-material",    
-  "create-site": "npm run download-project && python3 
-     scripts/create_site.py && npm run serve-site",    
-  "serve-site": "cd mkdocs-site && mkdocs build && mkdocs serve",
-  "deploy-site": "cd mkdocs-site && mkdocs build && mkdocs gh-  
-     deploy",    
-  "setup": "npm run install-mkdocs && npm run install-material"
+    "github-clone": "git clone https://github.com/angular/material2.git",
+    "github-delete": "rm -rf material2",    
+    "install-dependencies": "pip install mkdocs && pip install mkdocs-material",
+    "build": "npm run github-delete && npm run github-clone && python site.py && cd generated-site && mkdocs serve",
+    "deploy": "cd generated-site && mkdocs build && mkdocs gh-deploy"
   },
   "repository": {
     "type": "git",

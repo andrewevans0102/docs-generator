@@ -64,7 +64,7 @@ typings/
 generated-site/site/*
 
 # created files from project
-/generated-site/site-files/
+/generated-site/site-files/docs/
 
 # created mkdocs file for site
 /generated-site/mkdocs.yml

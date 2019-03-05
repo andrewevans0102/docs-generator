@@ -1,0 +1,2594 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="all documentation for the project">
+      
+      
+      
+        <meta name="author" content="Andrew Evans">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.2">
+    
+    
+      
+        <title>1-CODING_STANDARDS - project documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.982221ab.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1f0bcf2b.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#angular-material-coding-standards" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="project documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              project documentation
+            </span>
+            <span class="md-header-nav__topic">
+              1-CODING_STANDARDS
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="project documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    project documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      source
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        source
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/0-README/" title="0-README" class="md-nav__link">
+      0-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/1-tabs/" title="1-tabs" class="md-nav__link">
+      1-tabs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/2-tree/" title="2-tree" class="md-nav__link">
+      2-tree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/3-README/" title="3-README" class="md-nav__link">
+      3-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/4-tooltip/" title="4-tooltip" class="md-nav__link">
+      4-tooltip
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/5-README/" title="5-README" class="md-nav__link">
+      5-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/6-sidenav/" title="6-sidenav" class="md-nav__link">
+      6-sidenav
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/7-radio/" title="7-radio" class="md-nav__link">
+      7-radio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/8-README/" title="8-README" class="md-nav__link">
+      8-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/9-card/" title="9-card" class="md-nav__link">
+      9-card
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/10-README/" title="10-README" class="md-nav__link">
+      10-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/11-README/" title="11-README" class="md-nav__link">
+      11-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/12-ripple/" title="12-ripple" class="md-nav__link">
+      12-ripple
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/13-autocomplete/" title="13-autocomplete" class="md-nav__link">
+      13-autocomplete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/14-README/" title="14-README" class="md-nav__link">
+      14-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/15-sort/" title="15-sort" class="md-nav__link">
+      15-sort
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/16-README/" title="16-README" class="md-nav__link">
+      16-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/17-chips/" title="17-chips" class="md-nav__link">
+      17-chips
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/18-input/" title="18-input" class="md-nav__link">
+      18-input
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/19-README/" title="19-README" class="md-nav__link">
+      19-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/20-README/" title="20-README" class="md-nav__link">
+      20-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/21-progress-bar/" title="21-progress-bar" class="md-nav__link">
+      21-progress-bar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/22-slide-toggle/" title="22-slide-toggle" class="md-nav__link">
+      22-slide-toggle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/23-README/" title="23-README" class="md-nav__link">
+      23-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/24-datepicker/" title="24-datepicker" class="md-nav__link">
+      24-datepicker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/25-README/" title="25-README" class="md-nav__link">
+      25-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/26-toolbar/" title="26-toolbar" class="md-nav__link">
+      26-toolbar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/27-README/" title="27-README" class="md-nav__link">
+      27-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/28-checkbox/" title="28-checkbox" class="md-nav__link">
+      28-checkbox
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/29-README/" title="29-README" class="md-nav__link">
+      29-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/30-slider/" title="30-slider" class="md-nav__link">
+      30-slider
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/31-README/" title="31-README" class="md-nav__link">
+      31-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/32-stepper/" title="32-stepper" class="md-nav__link">
+      32-stepper
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/33-README/" title="33-README" class="md-nav__link">
+      33-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/34-progress-spinner/" title="34-progress-spinner" class="md-nav__link">
+      34-progress-spinner
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/35-README/" title="35-README" class="md-nav__link">
+      35-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/36-dialog/" title="36-dialog" class="md-nav__link">
+      36-dialog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/37-form-field/" title="37-form-field" class="md-nav__link">
+      37-form-field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/38-README/" title="38-README" class="md-nav__link">
+      38-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/39-README/" title="39-README" class="md-nav__link">
+      39-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/40-expansion/" title="40-expansion" class="md-nav__link">
+      40-expansion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/41-README/" title="41-README" class="md-nav__link">
+      41-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/42-button-toggle/" title="42-button-toggle" class="md-nav__link">
+      42-button-toggle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/43-button/" title="43-button" class="md-nav__link">
+      43-button
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/44-README/" title="44-README" class="md-nav__link">
+      44-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/45-table/" title="45-table" class="md-nav__link">
+      45-table
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/46-list/" title="46-list" class="md-nav__link">
+      46-list
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/47-README/" title="47-README" class="md-nav__link">
+      47-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/48-README/" title="48-README" class="md-nav__link">
+      48-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/49-divider/" title="49-divider" class="md-nav__link">
+      49-divider
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/50-menu/" title="50-menu" class="md-nav__link">
+      50-menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/51-README/" title="51-README" class="md-nav__link">
+      51-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/52-grid-list/" title="52-grid-list" class="md-nav__link">
+      52-grid-list
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/53-README/" title="53-README" class="md-nav__link">
+      53-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/54-README/" title="54-README" class="md-nav__link">
+      54-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/55-bottom-sheet/" title="55-bottom-sheet" class="md-nav__link">
+      55-bottom-sheet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/56-select/" title="56-select" class="md-nav__link">
+      56-select
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/57-README/" title="57-README" class="md-nav__link">
+      57-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/58-README/" title="58-README" class="md-nav__link">
+      58-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/59-icon/" title="59-icon" class="md-nav__link">
+      59-icon
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/60-snack-bar/" title="60-snack-bar" class="md-nav__link">
+      60-snack-bar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/61-README/" title="61-README" class="md-nav__link">
+      61-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/62-paginator/" title="62-paginator" class="md-nav__link">
+      62-paginator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../source/63-badge/" title="63-badge" class="md-nav__link">
+      63-badge
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      github
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        github
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../github/0-ISSUE_TEMPLATE/" title="0-ISSUE_TEMPLATE" class="md-nav__link">
+      0-ISSUE_TEMPLATE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../github/1-bug/" title="1-bug" class="md-nav__link">
+      1-bug
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../github/2-feature/" title="2-feature" class="md-nav__link">
+      2-feature
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      guides
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/0-bidirectionality/" title="0-bidirectionality" class="md-nav__link">
+      0-bidirectionality
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/1-customizing-component-styles/" title="1-customizing-component-styles" class="md-nav__link">
+      1-customizing-component-styles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/2-schematics/" title="2-schematics" class="md-nav__link">
+      2-schematics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/3-theming-your-components/" title="3-theming-your-components" class="md-nav__link">
+      3-theming-your-components
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/4-getting-started/" title="4-getting-started" class="md-nav__link">
+      4-getting-started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/5-theming/" title="5-theming" class="md-nav__link">
+      5-theming
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/6-creating-a-custom-stepper-using-the-cdk-stepper/" title="6-creating-a-custom-stepper-using-the-cdk-stepper" class="md-nav__link">
+      6-creating-a-custom-stepper-using-the-cdk-stepper
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/7-typography/" title="7-typography" class="md-nav__link">
+      7-typography
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/8-elevation/" title="8-elevation" class="md-nav__link">
+      8-elevation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/9-creating-a-custom-form-field-control/" title="9-creating-a-custom-form-field-control" class="md-nav__link">
+      9-creating-a-custom-form-field-control
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      project
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        project
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../0-CHANGELOG/" title="0-CHANGELOG" class="md-nav__link">
+      0-CHANGELOG
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        1-CODING_STANDARDS
+      </label>
+    
+    <a href="./" title="1-CODING_STANDARDS" class="md-nav__link md-nav__link--active">
+      1-CODING_STANDARDS
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#code-style" title="Code style" class="md-nav__link">
+    Code style
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-practices" title="Coding practices" class="md-nav__link">
+    Coding practices
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general" title="General" class="md-nav__link">
+    General
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#write-useful-comments" title="Write useful comments" class="md-nav__link">
+    Write useful comments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefer-more-focused-granular-components-vs-complex-configurable-components" title="Prefer more focused, granular components vs. complex, configurable components." class="md-nav__link">
+    Prefer more focused, granular components vs. complex, configurable components.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefer-small-focused-modules" title="Prefer small, focused modules" class="md-nav__link">
+    Prefer small, focused modules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#less-is-more" title="Less is more" class="md-nav__link">
+    Less is more
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#100-column-limit" title="100 column limit" class="md-nav__link">
+    100 column limit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-design" title="API Design" class="md-nav__link">
+    API Design
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boolean-arguments" title="Boolean arguments" class="md-nav__link">
+    Boolean arguments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typescript" title="TypeScript" class="md-nav__link">
+    TypeScript
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typing" title="Typing" class="md-nav__link">
+    Typing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluent-apis" title="Fluent APIs" class="md-nav__link">
+    Fluent APIs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-modifiers" title="Access modifiers" class="md-nav__link">
+    Access modifiers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getters-and-setters" title="Getters and Setters" class="md-nav__link">
+    Getters and Setters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jsdoc-comments" title="JsDoc comments" class="md-nav__link">
+    JsDoc comments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#try-catch" title="Try-Catch" class="md-nav__link">
+    Try-Catch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#naming" title="Naming" class="md-nav__link">
+    Naming
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general_1" title="General" class="md-nav__link">
+    General
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes" title="Classes" class="md-nav__link">
+    Classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inheritance" title="Inheritance" class="md-nav__link">
+    Inheritance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#angular" title="Angular" class="md-nav__link">
+    Angular
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#host-bindings" title="Host bindings" class="md-nav__link">
+    Host bindings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#css" title="CSS" class="md-nav__link">
+    CSS
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#be-cautious-with-use-of-display-flex" title="Be cautious with use of display: flex" class="md-nav__link">
+    Be cautious with use of display: flex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-lowest-specificity-possible" title="Use lowest specificity possible" class="md-nav__link">
+    Use lowest specificity possible
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#never-set-a-margin-on-a-host-element" title="Never set a margin on a host element." class="md-nav__link">
+    Never set a margin on a host element.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefer-styling-the-host-element-vs-elements-inside-the-template-where-possible" title="Prefer styling the host element vs. elements inside the template (where possible)." class="md-nav__link">
+    Prefer styling the host element vs. elements inside the template (where possible).
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-styles-for-windows-high-contrast-mode" title="Support styles for Windows high-contrast mode" class="md-nav__link">
+    Support styles for Windows high-contrast mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explain-what-css-classes-are-for" title="Explain what CSS classes are for" class="md-nav__link">
+    Explain what CSS classes are for
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../2-README/" title="2-README" class="md-nav__link">
+      2-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3-DEV_ENVIRONMENT/" title="3-DEV_ENVIRONMENT" class="md-nav__link">
+      3-DEV_ENVIRONMENT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4-CONTRIBUTING/" title="4-CONTRIBUTING" class="md-nav__link">
+      4-CONTRIBUTING
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../5-CODE_REVIEWS/" title="5-CODE_REVIEWS" class="md-nav__link">
+      5-CODE_REVIEWS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../6-build-notes/" title="6-build-notes" class="md-nav__link">
+      6-build-notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../7-README/" title="7-README" class="md-nav__link">
+      7-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../8-tree/" title="8-tree" class="md-nav__link">
+      8-tree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../9-keycodes/" title="9-keycodes" class="md-nav__link">
+      9-keycodes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../10-portal/" title="10-portal" class="md-nav__link">
+      10-portal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../11-breakpoints-observer/" title="11-breakpoints-observer" class="md-nav__link">
+      11-breakpoints-observer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../12-media-matcher/" title="12-media-matcher" class="md-nav__link">
+      12-media-matcher
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../13-layout/" title="13-layout" class="md-nav__link">
+      13-layout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../14-platform/" title="14-platform" class="md-nav__link">
+      14-platform
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../15-bidi/" title="15-bidi" class="md-nav__link">
+      15-bidi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../16-stepper/" title="16-stepper" class="md-nav__link">
+      16-stepper
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../17-table/" title="17-table" class="md-nav__link">
+      17-table
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../18-render-rows/" title="18-render-rows" class="md-nav__link">
+      18-render-rows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../19-scrolling/" title="19-scrolling" class="md-nav__link">
+      19-scrolling
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../20-a11y/" title="20-a11y" class="md-nav__link">
+      20-a11y
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../21-live-announcer/" title="21-live-announcer" class="md-nav__link">
+      21-live-announcer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../22-interactivity-checker/" title="22-interactivity-checker" class="md-nav__link">
+      22-interactivity-checker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../23-focus-key-manager/" title="23-focus-key-manager" class="md-nav__link">
+      23-focus-key-manager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../24-list-key-manager/" title="24-list-key-manager" class="md-nav__link">
+      24-list-key-manager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../25-focus-trap/" title="25-focus-trap" class="md-nav__link">
+      25-focus-trap
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../26-text-field/" title="26-text-field" class="md-nav__link">
+      26-text-field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../27-overlay/" title="27-overlay" class="md-nav__link">
+      27-overlay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../28-scroll-strategy/" title="28-scroll-strategy" class="md-nav__link">
+      28-scroll-strategy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../29-collections/" title="29-collections" class="md-nav__link">
+      29-collections
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../30-coercion/" title="30-coercion" class="md-nav__link">
+      30-coercion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../31-observers/" title="31-observers" class="md-nav__link">
+      31-observers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../32-README/" title="32-README" class="md-nav__link">
+      32-README
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../33-update-schematic/" title="33-update-schematic" class="md-nav__link">
+      33-update-schematic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../34-drag-drop/" title="34-drag-drop" class="md-nav__link">
+      34-drag-drop
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../35-scrolling/" title="35-scrolling" class="md-nav__link">
+      35-scrolling
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#code-style" title="Code style" class="md-nav__link">
+    Code style
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-practices" title="Coding practices" class="md-nav__link">
+    Coding practices
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general" title="General" class="md-nav__link">
+    General
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#write-useful-comments" title="Write useful comments" class="md-nav__link">
+    Write useful comments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefer-more-focused-granular-components-vs-complex-configurable-components" title="Prefer more focused, granular components vs. complex, configurable components." class="md-nav__link">
+    Prefer more focused, granular components vs. complex, configurable components.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefer-small-focused-modules" title="Prefer small, focused modules" class="md-nav__link">
+    Prefer small, focused modules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#less-is-more" title="Less is more" class="md-nav__link">
+    Less is more
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#100-column-limit" title="100 column limit" class="md-nav__link">
+    100 column limit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-design" title="API Design" class="md-nav__link">
+    API Design
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boolean-arguments" title="Boolean arguments" class="md-nav__link">
+    Boolean arguments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typescript" title="TypeScript" class="md-nav__link">
+    TypeScript
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typing" title="Typing" class="md-nav__link">
+    Typing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluent-apis" title="Fluent APIs" class="md-nav__link">
+    Fluent APIs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-modifiers" title="Access modifiers" class="md-nav__link">
+    Access modifiers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getters-and-setters" title="Getters and Setters" class="md-nav__link">
+    Getters and Setters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jsdoc-comments" title="JsDoc comments" class="md-nav__link">
+    JsDoc comments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#try-catch" title="Try-Catch" class="md-nav__link">
+    Try-Catch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#naming" title="Naming" class="md-nav__link">
+    Naming
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general_1" title="General" class="md-nav__link">
+    General
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes" title="Classes" class="md-nav__link">
+    Classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inheritance" title="Inheritance" class="md-nav__link">
+    Inheritance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#angular" title="Angular" class="md-nav__link">
+    Angular
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#host-bindings" title="Host bindings" class="md-nav__link">
+    Host bindings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#css" title="CSS" class="md-nav__link">
+    CSS
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#be-cautious-with-use-of-display-flex" title="Be cautious with use of display: flex" class="md-nav__link">
+    Be cautious with use of display: flex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-lowest-specificity-possible" title="Use lowest specificity possible" class="md-nav__link">
+    Use lowest specificity possible
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#never-set-a-margin-on-a-host-element" title="Never set a margin on a host element." class="md-nav__link">
+    Never set a margin on a host element.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefer-styling-the-host-element-vs-elements-inside-the-template-where-possible" title="Prefer styling the host element vs. elements inside the template (where possible)." class="md-nav__link">
+    Prefer styling the host element vs. elements inside the template (where possible).
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-styles-for-windows-high-contrast-mode" title="Support styles for Windows high-contrast mode" class="md-nav__link">
+    Support styles for Windows high-contrast mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explain-what-css-classes-are-for" title="Explain what CSS classes are for" class="md-nav__link">
+    Explain what CSS classes are for
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="angular-material-coding-standards">Angular Material Coding Standards</h1>
+<h2 id="code-style">Code style</h2>
+<p>The <a href="https://google.github.io/styleguide/jsguide.html">Google JavaScript Style Guide</a> is the
+basis for our coding style, with additional guidance here where that style guide is not aligned with
+ES6 or TypeScript.</p>
+<h2 id="coding-practices">Coding practices</h2>
+<h3 id="general">General</h3>
+<h4 id="write-useful-comments">Write useful comments</h4>
+<p>Comments that explain what some block of code does are nice; they can tell you something in less
+time than it would take to follow through the code itself.</p>
+<p>Comments that explain why some block of code exists at all, or does something the way it does,
+are <em>invaluable</em>. The "why" is difficult, or sometimes impossible, to track down without seeking out
+the original author. When collaborators are in the same room, this hurts productivity.
+When collaborators are in different timezones, this can be devastating to productivity.</p>
+<p>For example, this is a not-very-useful comment:</p>
+<pre><code class="ts">// Set default tabindex.
+if (!$attrs['tabindex']) {
+  $element.attr('tabindex', '-1');
+}
+</code></pre>
+
+<p>While this is much more useful:</p>
+<pre><code class="ts">// Unless the user specifies so, the calendar should not be a tab stop.
+// This is necessary because ngAria might add a tabindex to anything with an ng-model
+// (based on whether or not the user has turned that particular feature on/off).
+if (!$attrs['tabindex']) {
+  $element.attr('tabindex', '-1');
+}
+</code></pre>
+
+<p>In TypeScript code, use JsDoc-style comments for descriptions (on classes, members, etc.) and
+use <code>//</code> style comments for everything else (explanations, background info, etc.).</p>
+<p>In SCSS code, always use <code>//</code> style comments.</p>
+<p>In HTML code, use <code>&lt;!-- ... --&gt;</code> comments, which will be stripped when packaging a build.</p>
+<h4 id="prefer-more-focused-granular-components-vs-complex-configurable-components">Prefer more focused, granular components vs. complex, configurable components.</h4>
+<p>For example, rather than doing this:</p>
+<pre><code class="html">&lt;mat-button&gt;Basic button&lt;/mat-button&gt;
+&lt;mat-button class=&quot;mat-fab&quot;&gt;FAB&lt;/mat-button&gt;
+&lt;mat-button class=&quot;mat-icon-button&quot;&gt;pony&lt;/mat-button&gt;
+</code></pre>
+
+<p>do this:</p>
+<pre><code class="html">&lt;mat-button&gt;Basic button&lt;/mat-button&gt;
+&lt;mat-fab&gt;FAB&lt;/mat-fab&gt;
+&lt;mat-icon-button&gt;pony&lt;/mat-icon-button&gt;
+</code></pre>
+
+<h4 id="prefer-small-focused-modules">Prefer small, focused modules</h4>
+<p>Keeping modules to a single responsibility makes the code easier to test, consume, and maintain.
+ES6 modules offer a straightforward way to organize code into logical, granular units.
+Ideally, individual files are 200 - 300 lines of code.</p>
+<p>As a rule of thumb, once a file draws near 400 lines (barring abnormally long constants / comments),
+start considering how to refactor into smaller pieces.</p>
+<h4 id="less-is-more">Less is more</h4>
+<p>Once a feature is released, it never goes away. We should avoid adding features that don't offer
+high user value for price we pay both in maintenance, complexity, and payload size. When in doubt,
+leave it out.</p>
+<p>This applies especially to providing two different APIs to accomplish the same thing. Always
+prefer sticking to a <em>single</em> API for accomplishing something.</p>
+<h3 id="100-column-limit">100 column limit</h3>
+<p>All code and docs in the repo should be 100 columns or fewer. This applies to TypeScript, SCSS,
+HTML, bash scripts, and markdown files.</p>
+<h3 id="api-design">API Design</h3>
+<h4 id="boolean-arguments">Boolean arguments</h4>
+<p>Avoid adding boolean arguments to a method in cases where that argument means "do something extra".
+In these cases, prefer breaking the behavior up into different functions.</p>
+<pre><code class="ts">// AVOID
+function getTargetElement(createIfNotFound = false) {
+  // ...
+}
+</code></pre>
+
+<pre><code class="ts">// PREFER
+function getExistingTargetElement() {
+  // ...
+}
+
+function createTargetElement() {
+ // ...
+}
+</code></pre>
+
+<h3 id="typescript">TypeScript</h3>
+<h4 id="typing">Typing</h4>
+<p>Avoid <code>any</code> where possible. If you find yourself using <code>any</code>, consider whether a generic may be
+appropriate in your case.</p>
+<p>For methods and properties that are part of a component's public API, all types must be explicitly
+specified because our documentation tooling cannot currently infer types in places where TypeScript
+can.</p>
+<h4 id="fluent-apis">Fluent APIs</h4>
+<p>When creating a fluent or builder-pattern style API, use the <code>this</code> return type for methods:</p>
+<pre><code>class ConfigBuilder {
+  withName(name: string): this {
+    this.config.name = name;
+    return this;
+  }
+}
+</code></pre>
+
+<h4 id="access-modifiers">Access modifiers</h4>
+<ul>
+<li>Omit the <code>public</code> keyword as it is the default behavior.</li>
+<li>Use <code>private</code> when appropriate and possible, prefixing the name with an underscore.</li>
+<li>Use <code>protected</code> when appropriate and possible with no prefix.</li>
+<li>Prefix <em>library-internal</em> properties and methods with an underscore without using the <code>private</code>
+keyword. This is necessary for anything that must be public (to be used by Angular), but should not
+be part of the user-facing API. This typically applies to symbols used in template expressions,
+<code>@ViewChildren</code> / <code>@ContentChildren</code> properties, host bindings, and <code>@Input</code> / <code>@Output</code> properties
+(when using an alias).</li>
+</ul>
+<p>Additionally, the <code>@docs-private</code> JsDoc annotation can be used to hide any symbol from the public
+API docs.</p>
+<h4 id="getters-and-setters">Getters and Setters</h4>
+<ul>
+<li>Avoid long or complex getters and setters. If the logic of an accessor would take more than
+three lines, introduce a new method to contain the logic.</li>
+<li>A getter should immediately precede its corresponding setter.</li>
+<li>Decorators such as <code>@Input</code> should be applied to the getter and not the setter.</li>
+<li>Always use a <code>readonly</code> property instead of a getter (with no setter) when possible.
+  ```ts
+  /*<em> YES </em>/
+  readonly active: boolean;</li>
+</ul>
+<p>/*<em> NO </em>/
+  get active(): boolean {
+    // Using a getter solely to make the property read-only.
+    return this._active;
+  }
+  ```</p>
+<h4 id="jsdoc-comments">JsDoc comments</h4>
+<p>All public APIs must have user-facing comments. These are extracted and shown in the documentation
+on <a href="https://material.angular.io">material.angular.io</a>.</p>
+<p>Private and internal APIs should have JsDoc when they are not obvious. Ultimately it is the purview
+of the code reviewer as to what is "obvious", but the rule of thumb is that <em>most</em> classes,
+properties, and methods should have a JsDoc description.</p>
+<p>Properties should have a concise description of what the property means:</p>
+<pre><code class="ts">  /** The label position relative to the checkbox. Defaults to 'after' */
+  @Input() labelPosition: 'before' | 'after' = 'after';
+</code></pre>
+
+<p>Methods blocks should describe what the function does and provide a description for each parameter
+and the return value:</p>
+<pre><code class="ts">  /**
+   * Opens a modal dialog containing the given component.
+   * @param component Type of the component to load into the dialog.
+   * @param config Dialog configuration options.
+   * @returns Reference to the newly-opened dialog.
+   */
+  open&lt;T&gt;(component: ComponentType&lt;T&gt;, config?: MatDialogConfig): MatDialogRef&lt;T&gt; { ... }
+</code></pre>
+
+<p>Boolean properties and return values should use "Whether..." as opposed to "True if...":</p>
+<pre><code class="ts">  /** Whether the button is disabled. */
+  disabled: boolean = false;
+</code></pre>
+
+<h4 id="try-catch">Try-Catch</h4>
+<p>Avoid <code>try-catch</code> blocks, instead preferring to prevent an error from being thrown in the first
+place. When impossible to avoid, the <code>try-catch</code> block must include a comment that explains the
+specific error being caught and why it cannot be prevented.</p>
+<h4 id="naming">Naming</h4>
+<h5 id="general_1">General</h5>
+<ul>
+<li>Prefer writing out words instead of using abbreviations.</li>
+<li>Prefer <em>exact</em> names over short names (within reason). E.g., <code>labelPosition</code> is better than
+<code>align</code> because the former much more exactly communicates what the property means.</li>
+<li>Except for <code>@Input</code> properties, use <code>is</code> and <code>has</code> prefixes for boolean properties / methods.</li>
+</ul>
+<h5 id="classes">Classes</h5>
+<p>Classes should be named based on what they're responsible for. Names should capture what the code
+<em>does</em>, not how it is used:</p>
+<pre><code>/** NO: */
+class RadioService { }
+
+/** YES: */
+class UniqueSelectionDispatcher { }
+</code></pre>
+
+<p>Avoid suffixing a class with "Service", as it communicates nothing about what the class does. Try to
+think of the class name as a person's job title.</p>
+<p>Classes that correspond to a directive with an <code>mat-</code> prefix should also be prefixed with <code>Mat</code>.
+CDK classes should only have a <code>Cdk</code> prefix when the class is a directive with a <code>cdk</code> selector
+prefix.</p>
+<h5 id="methods">Methods</h5>
+<p>The name of a method should capture the action that is performed <em>by</em> that method rather than
+describing when the method will be called. For example,</p>
+<pre><code class="ts">/** AVOID: does not describe what the function does. */
+handleClick() {
+  // ...
+}
+
+/** PREFER: describes the action performed by the function. */
+activateRipple() {
+  // ...
+}
+</code></pre>
+
+<h4 id="inheritance">Inheritance</h4>
+<p>Avoid using inheritance to apply reusable behaviors to multiple components. This limits how many
+behaviors can be composed. Instead, <a href="https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html#support-for-mix-in-classes">TypeScript mixins</a> can be used to compose multiple
+common behaviors into a single component.</p>
+<h3 id="angular">Angular</h3>
+<h4 id="host-bindings">Host bindings</h4>
+<p>Prefer using the <code>host</code> object in the directive configuration instead of <code>@HostBinding</code> and
+<code>@HostListener</code>. We do this because TypeScript preserves the type information of methods with
+decorators, and when one of the arguments for the method is a native <code>Event</code> type, this preserved
+type information can lead to runtime errors in non-browser environments (e.g., server-side
+pre-rendering).</p>
+<h3 id="css">CSS</h3>
+<h4 id="be-cautious-with-use-of-display-flex">Be cautious with use of <code>display: flex</code></h4>
+<ul>
+<li>The <a href="http://www.w3.org/TR/css-flexbox-1/#flex-baselines">baseline calculation for flex elements</a>
+is different than other display values, making it difficult to align flex elements with standard
+elements like input and button.</li>
+<li>Component outermost elements are never flex (block or inline-block)</li>
+<li>Don't use <code>display: flex</code> on elements that will contain projected content.</li>
+</ul>
+<h4 id="use-lowest-specificity-possible">Use lowest specificity possible</h4>
+<p>Always prioritize lower specificity over other factors. Most style definitions should consist of a
+single element or css selector plus necessary state modifiers. <strong>Avoid SCSS nesting for the sake of
+code organization.</strong> This will allow users to much more easily override styles.</p>
+<p>For example, rather than doing this:</p>
+<pre><code class="scss">.mat-calendar {
+  display: block;
+
+  .mat-month {
+    display: inline-block;
+
+    .mat-date.mat-selected {
+      font-weight: bold;
+    }
+  }
+}
+</code></pre>
+
+<p>do this:</p>
+<pre><code class="scss">.mat-calendar {
+  display: block;
+}
+
+.mat-calendar-month {
+  display: inline-block;
+}
+
+.mat-calendar-date.mat-selected {
+  font-weight: bold;
+}
+</code></pre>
+
+<h4 id="never-set-a-margin-on-a-host-element">Never set a margin on a host element.</h4>
+<p>The end-user of a component should be the one to decide how much margin a component has around it.</p>
+<h4 id="prefer-styling-the-host-element-vs-elements-inside-the-template-where-possible">Prefer styling the host element vs. elements inside the template (where possible).</h4>
+<p>This makes it easier to override styles when necessary. For example, rather than</p>
+<pre><code class="scss">the-host-element {
+  // ...
+
+  .some-child-element {
+    color: red;
+  }
+}
+</code></pre>
+
+<p>you can write</p>
+<pre><code class="scss">the-host-element {
+  // ...
+  color: red;
+}
+</code></pre>
+
+<p>The latter is equivalent for the component, but makes it easier override when necessary.</p>
+<h4 id="support-styles-for-windows-high-contrast-mode">Support styles for Windows high-contrast mode</h4>
+<p>This is a low-effort task that makes a big difference for low-vision users. Example:</p>
+<pre><code class="css">@media screen and (-ms-high-contrast: active) {
+  .unicorn-motocycle {
+    border: 1px solid #fff !important;
+  }
+}
+</code></pre>
+
+<h4 id="explain-what-css-classes-are-for">Explain what CSS classes are for</h4>
+<p>When it is not super obvious, include a brief description of what a class represents. For example:</p>
+<pre><code class="scss">// The calendar icon button used to open the calendar pane.
+.mat-datepicker-button { ... }
+
+// Floating pane that contains the calendar at the bottom of the input.
+.mat-datepicker-calendar-pane { ... }
+
+// Portion of the floating panel that sits, invisibly, on top of the input.
+.mat-datepicker-input-mask { }
+</code></pre>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../0-CHANGELOG/" title="0-CHANGELOG" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                0-CHANGELOG
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../2-README/" title="2-README" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                2-README
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.d9aa80ab.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>
